@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F21AE13292615FD0032E65E /* LaserRed.reality in Resources */ = {isa = PBXBuildFile; fileRef = 9F21AE12292615FD0032E65E /* LaserRed.reality */; };
+		9F21AE1629262AF50032E65E /* MultipeerSession in Frameworks */ = {isa = PBXBuildFile; productRef = 9F21AE1529262AF50032E65E /* MultipeerSession */; };
 		9F2F5C982926118200F5C922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F5C972926118200F5C922 /* AppDelegate.swift */; };
 		9F2F5C9A2926118200F5C922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F5C992926118200F5C922 /* ViewController.swift */; };
 		9F2F5C9C2926118200F5C922 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F5C9B2926118200F5C922 /* Experience.rcproject */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F21AE12292615FD0032E65E /* LaserRed.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = LaserRed.reality; sourceTree = "<group>"; };
 		9F2F5C942926118200F5C922 /* MultiuserARSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiuserARSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2F5C972926118200F5C922 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F2F5C992926118200F5C922 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F21AE1629262AF50032E65E /* MultipeerSession in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 			children = (
 				9F2F5C972926118200F5C922 /* AppDelegate.swift */,
 				9F2F5C992926118200F5C922 /* ViewController.swift */,
+				9F21AE12292615FD0032E65E /* LaserRed.reality */,
 				9F2F5C9B2926118200F5C922 /* Experience.rcproject */,
 				9F2F5C9D2926118200F5C922 /* Main.storyboard */,
 				9F2F5CA02926118300F5C922 /* Assets.xcassets */,
@@ -81,6 +86,9 @@
 			dependencies = (
 			);
 			name = MultiuserARSample;
+			packageProductDependencies = (
+				9F21AE1529262AF50032E65E /* MultipeerSession */,
+			);
 			productName = MultiuserARSample;
 			productReference = 9F2F5C942926118200F5C922 /* MultiuserARSample.app */;
 			productType = "com.apple.product-type.application";
@@ -109,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 9F2F5C8B2926118200F5C922;
+			packageReferences = (
+				9F21AE1429262AF50032E65E /* XCRemoteSwiftPackageReference "multipeer-session" */,
+			);
 			productRefGroup = 9F2F5C952926118200F5C922 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +136,7 @@
 			files = (
 				9F2F5CA42926118300F5C922 /* LaunchScreen.storyboard in Resources */,
 				9F2F5CA12926118300F5C922 /* Assets.xcassets in Resources */,
+				9F21AE13292615FD0032E65E /* LaserRed.reality in Resources */,
 				9F2F5C9F2926118200F5C922 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +299,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RYRF347865;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiuserARSample/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "ローカルネットワークを使用します";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tftf161107.MultiuserARSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tftf161107.ModelTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +331,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RYRF347865;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiuserARSample/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "ローカルネットワークを使用します";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tftf161107.MultiuserARSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tftf161107.ModelTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F21AE1429262AF50032E65E /* XCRemoteSwiftPackageReference "multipeer-session" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AddedLayer/multipeer-session";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F21AE1529262AF50032E65E /* MultipeerSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F21AE1429262AF50032E65E /* XCRemoteSwiftPackageReference "multipeer-session" */;
+			productName = MultipeerSession;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F2F5C8C2926118200F5C922 /* Project object */;
 }
